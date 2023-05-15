@@ -58,11 +58,11 @@ const questions = [
     name: 'license',
     choices:[
         "MIT",
-        "mit",
-        "mit",
-        "mit",
-        "mit",
-        "mit",],
+        "Mozilla",
+        "GPLv2",
+        "Apache",
+        "GPLv3",
+        "None",],
     validate:checkInput(),
     },
     
