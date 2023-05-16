@@ -5,52 +5,37 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 
 
-function checkInput(input){
-    if(input != ""){
-        return true
-    }
-    return "Input invalid try again"
-}
-
-
-
 // TODO: Create an array of questions for user input
 const questions = [
     {
     type: 'input',
     message: 'What is the name of your project?',
-    name: 'title',
-    validate:checkInput()
+    name: 'title',    
     },
     {
     type: 'input',
     message: 'Enter a description for your project',
-    name: 'description',
-    validate:checkInput()
+    name: 'description',    
     },
     {
     type: 'input',
     message: 'Enter installation instructions for your project',
-    name: 'installation',
-    validate:checkInput()
+    name: 'installation',    
     },
     {
     type: 'input',
     message: 'Enter usage information for your project',
     name: 'usage',
-    validate:checkInput(),
     },
     {
     type: 'input',
     message: 'Enter contribution guidelines for your project',
     name: 'contribution',
-    validate:checkInput(),
     },
     {
     type: 'input',
     message: 'Enter test instructions for your project',
     name: 'test',
-    validate:checkInput(),
     },
     {
     type: 'list',
@@ -63,20 +48,23 @@ const questions = [
         "Apache",
         "GPLv3",
         "None",],
-    validate:checkInput(),
     },
     
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
+function writeToFile (fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), (err) => {
+        if (err) throw err;
+})
+}
 // TODO: Create a function to initialize app
 function init() {
 inquirer.prompt(questions).then((data) => {
-console.log(data)
+    console.log(JSON.stringify(data,null," "))
+    writeToFile("./readmes/README.md",data)
 })
 };
 
-// Function call to initialize app
+// Function call to initialize apps
 init();

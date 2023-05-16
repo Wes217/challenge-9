@@ -15,12 +15,29 @@ function generateMarkdown(data) {
   return `
   #${data.title}
 
-  ${'license'}
+  
+  ${data.license}
 
   # Description
   ${data.description}
 
-  #table of content
+  # Table of Content
+    [Installation](#-Installation)
+
+
+
+
+  # Installation
+  ${data.installation}
+  # Usage
+  ${data.usage}
+  # License
+  ${data.license}
+  # Contribution
+  ${data.contribution}
+  # Tests
+  ${data.description}
+  # Contact Information
 
 `;
 }
