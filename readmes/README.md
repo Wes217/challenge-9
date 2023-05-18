@@ -1,43 +1,40 @@
 
-  # challenge-9
+  # cool name
 
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
   ## Description
-  A application to genorate a README
+  super description
 
   ## Table of Content
-- [challenge-9](#challenge-9)
-  - [Description](#description)
-  - [Table of Content](#table-of-content)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contribution](#contribution)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
-  inquirer required
+  install it bozo
   
   ## Usage
-  Answer questions about your README
+  it's not that hard
   
   
   ## License
   
-  [MIT](https://opensource.org/licenses/MIT)
+  [GNU GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   
 
 
   ## Contribution
-  Do what you want
+  just do the do
 
   ## Tests
-  Run index.js
+  test it like a math nerd
 
   ## Questions
-  * Email: [example@example.com](example@example.com)
-  * Github: [Wes217](https://github.com/Wes217)
+  * Email: [bozo@bozo.com](bozo@bozo.com)
+  * Github: [bozo](https://github.com/bozo)
 
