@@ -14,43 +14,60 @@ const questions = [
     },
     {
     type: 'input',
-    message: 'Enter a description for your project',
+    message: 'Enter a description for your project:',
     name: 'description',    
     },
     {
     type: 'input',
-    message: 'Enter installation instructions for your project',
+    message: 'Enter installation instructions for your project:',
     name: 'installation',    
     },
     {
     type: 'input',
-    message: 'Enter usage information for your project',
+    message: 'Enter usage information for your project:',
     name: 'usage',
     },
     {
     type: 'input',
-    message: 'Enter contribution guidelines for your project',
+    message: 'Enter contribution guidelines for your project:',
     name: 'contribution',
     },
     {
     type: 'input',
-    message: 'Enter test instructions for your project',
+    message: 'Enter test instructions for your project:',
     name: 'test',
     },
     {
     type: 'list',
-    message: 'Select a license',
+    message: 'Select a license:',
     name: 'license',
     choices:[
         "MIT",
         "Mozilla",
-        "GPLv2",
+        "GNU GPL v2",
+        "GNU GPL v3",
         "Apache",
-        "GPLv3",
         "None",],
+    },
+    {
+    type: 'input',
+    message: 'Enter email for contact:',
+    name: 'email',
+    },
+    {
+    type: 'input',
+    message: 'Enter Github username:',
+    name: 'username',
     },
     
 ];
+
+
+
+
+
+
+
 
 // TODO: Create a function to write README file
 function writeToFile (fileName, data) {
@@ -61,7 +78,6 @@ function writeToFile (fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
 inquirer.prompt(questions).then((data) => {
-    console.log(JSON.stringify(data,null," "))
     writeToFile("./readmes/README.md",data)
 })
 };
