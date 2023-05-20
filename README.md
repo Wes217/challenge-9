@@ -18,7 +18,7 @@
   inquirer required
   
   ## Usage
-  Answer questions about your README
+  [Answer questions about your README](https://watch.screencastify.com/v/e7PdkniKE8aMzvt35d4Q)
   
   
   ## License
